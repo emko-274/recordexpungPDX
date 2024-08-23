@@ -639,7 +639,7 @@ class FormFilling:
         #todo: refactor and build separate method to compose compiled
         if all_motions_to_set_aside:
             compiled = PdfWriter()
-            compiled.addpages(PdfReader(all_motions_to_set_aside.pop(0)[0]).pages)
+            #compiled.addpages(PdfReader(all_motions_to_set_aside.pop(0)[0]).pages)
             for f in all_motions_to_set_aside:
                 compiled.addpages(PdfReader(f[0]).pages)
 
